@@ -6,8 +6,6 @@ module.exports = function (context, req) {
 
     // winston.add(winston.transports.File, { filename: 'test.log'});
 
-    // just adding some testing lines
-
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
             // status: 200, /* Defaults to 200 */
