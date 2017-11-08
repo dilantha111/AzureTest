@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "type": "documentdb",
+      "name": "documents",
+      "direction": "in",
+      "databaseName": "FamilyDB",
+      "collectionName": "FamilyColl",
+      "connection": "CosmosDBConnection"
+    },
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [ "get" ],
+      "route": "db",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
